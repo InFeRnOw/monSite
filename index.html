@@ -8,10 +8,33 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="CSS/style.css">
         <script src="js/script.js"></script>
     </head>
-    <body>
+    <body data-spy="scroll" data-target=".navbar" data-offset="60">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                         <span class="icon-bar"></span>
+                         <span class="icon-bar"></span>
+                         <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#about">Moi</a></li>
+                        <li><a href="#skills">Compétences</a></li>
+                        <li><a href="#experience">Expérience</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#recommandations">Recommandations</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </nav>
 
         <section id="about" class="container-fluid">
             <div class="col-xs-8 col-md-4 profile-picture">
@@ -204,5 +227,51 @@
                 </div>
         </div>
         </section>
+        <section id="recommandations">
+            <div class="container-fluid">
+                <div class="blue-divider"></div>
+                <div class="heading">
+                    <h2>Les Grands Esprits</h2>
+                </div>
+                <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                         <li data-target="#myCarousel" data-slide-to="1"></li>
+                         <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <h3>"Il y a trois réponses possibles à une pièce de design – oui, non, et WOW! Wow est la réaction que vous devez rechercher."</h3>
+                            <h4>Milton Glaser</h4>
+                        </div>
+                          <div class="item">
+                            <h3>"En terme de design, il y a selon moi deux choses essentielles: la simplicité et la clarté. Un bon design nait de ces deux éléments."</h3>
+                            <h4>Lindon Leader</h4>
+                        </div>
+                          <div class="item">
+                            <h3>« Avoir peu d’attente est une bonne stratégie."</h3>
+                            <h4>Stefan Sagmeister</h4>
+                        </div>
+                    </div>
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev" role="button">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next" role="button">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+        <footer class="text-center">
+            <a href="#about">
+                <span class="glyphicon glyphicon-chevron-up"></span>
+            </a>
+            <h5>© 2017 Udemy.com</h5>
+        </footer>
     </body>
 </html>
